@@ -1,0 +1,254 @@
+p{
+    font-family: 'Roboto Slab',serif;
+}
+h1{
+    font-family: 'Roboto' sans-serif;
+    font-weight: bold;
+}
+.navbar{
+    height: 4rem;
+    font-size:x-large;
+}
+.imglogo{
+  height: 3.688rem !important;
+  width: 4.688rem !important;
+  margin-top: 0.15rem;
+}
+.bg-dark{
+    background-color: #00448B !important;
+}
+footer{
+    height: 0rem;
+}
+/*.register-title{
+    margin-top: 100px;
+    color: #fff;
+    text-transform: uppercase;
+    transition: all 4s ease-in-out;
+}
+.register-title h1{
+    font-size: 32px;
+    line-height: 10px;
+}
+.register-title h2{
+    font-size: 16px;
+}*/
+/* Kontakt ***************************************************************************************/
+
+form input{
+    font-family: 'Roboto Slab', serif;
+    font-size: 0.9375rem;
+    margin-bottom: 0.625rem;
+    border-radius: 0.125rem;
+    border: 0.125rem solid;
+    border-color: #494949;
+    outline: none;
+}
+
+form input:first-child {
+    margin-top: 0.625rem;
+}
+
+form input {
+    width: 34.375rem;
+    height: 1.875rem;
+}
+
+
+
+.input_text {
+    color: 494949;
+    padding-left: 0.625rem;
+}
+
+
+:-ms-input-placeholder {  
+   color: #999999;  
+}
+ 
+::-webkit-input-placeholder {
+   color: #999999;
+}
+ 
+:-moz-placeholder { 
+   color: #999999;  
+}
+ 
+::-moz-placeholder {  
+   color: #999999;  
+}
+
+
+.button {
+    background-color: #D8D8D8;
+    color: #494949;
+    width: 10rem;
+    height: 2.5rem;
+}
+
+
+.button:hover {
+    background-color: #494949;
+    color: #D8D8D8;
+    }
+
+.registerform{
+    margin-left: 41.875rem;
+}
+
+.register{
+    margin-top: 12.5rem;
+    margin-bottom: 12.5rem;
+    outline: none !important;
+    border: none !important;
+}
+
+.uname, .psw {
+    width: 100%;
+    padding: 0.75rem 1.25rem;
+    margin: 0.5rem 0;
+    display: inline-block;
+    border: 0.0625rem solid #ccc;
+    box-sizing: border-box;
+  }
+  
+ 
+
+  .loginbtn {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    margin-top: 0.625rem;
+    margin-left: 0.625rem;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    height: 70%;
+    text-align: center;
+  }
+
+
+  button:hover {
+    opacity: 0.8;
+  }
+  
+
+  .cancelbtn {
+    width: auto;
+    padding: 0.625rem 1.125rem;
+    background-color: #f44336;
+    color: #fff;
+  }
+
+  .login2btn{
+    width: auto;
+    padding: 0.625rem 1.125rem;
+    background-color: green;
+    color: #fff;
+    margin-top: 1.875rem;
+  }
+
+  .checkbox{
+      margin-left: 23.1125rem;
+      
+  }
+  
+ 
+  .imgcontainer {
+    text-align: center;
+    margin: 1.5rem 0 0.75rem 0;
+    position: relative;
+  }
+  
+  img.avatar {
+    width: 15.625rem;
+    height: 15.25rem;
+    border-radius: 50%;
+  }
+  
+  .container {
+    padding: 1rem;
+  }
+  
+  span.psw {
+    float: right;
+    padding-top: 1rem;
+  }
+  
+
+  .modal {
+    display: none; 
+    position:fixed;
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    padding-top: 3.75rem;
+  }
+  
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; 
+    border: 0.0625rem solid #888;
+    width: 50%; 
+  }
+
+  .inputlogin{
+      padding-left: 12.5rem;
+      padding-right: 12.5rem;  
+    }
+
+    .psw{
+        padding-right: 6.25rem;
+    }
+
+    .signup{
+        padding-left: 6.25rem;
+    }
+  
+
+  .close {
+    position: absolute;
+    right: 1.5625rem;
+    top: 0;
+    color: #000;
+    font-size: 2.1875rem;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+ 
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+ 
+  @media screen and (max-width: 18.75rem) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }

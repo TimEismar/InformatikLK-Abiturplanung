@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Eismart - MQTT SmartHome</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet"> 
+  <!-- Custom styles for this template -->
+  <link href="css/heroic-features.css" rel="stylesheet">
+  <link href="css/contact.css" rel="stylesheet">
+  <link rel="icon" href="img/favicon/LogoMakr_8BoySC.png" type="image/png">
+
+</head>
+
+<body>
+
+  <div class="fullscreen-bg">
+    <video loop muted autoplay poster="img/videoframe.jpg" class="fullscreen-bg__video">
+        <source src="video/Network.webm" type="video/webm">
+    </video>
+</div>
+
+
+
+    <div class="background">
+    <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a href="index.html"><img class="imglogo" src="img/logowhite.png"></a>
+      <!--<a class="navbar-brand" href="#"><img class="imglogo" src="img/logo.png"></a>-->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Download</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Kontakt</a>
+          </li>
+          <li class="nav-item">
+            <button class="btn loginbtn" onclick="document.getElementById('id01').style.display='block'">Log-in</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <!--<div class="contact-title">
+        <h1>Hallo</h1>
+        <h2> das ist das Kontakformular</h2>
+      </div>
+      <div class="contact-form">
+        <form id="contact-form" method="post" action="php/contact.php">
+            <input name="name" type="text" class="form-control" placeholder="Dein Name" required><br>
+            <input name="email" type="email" class="form-control" placeholder="Deine E-Mail" required><br>
+            <textarea name="message" class="form-control" placeholder="Nachricht" row="4" required></textarea><br>
+            <input type="submit" class="form-control submit" value="Nachricht absenden">
+        </form>
+      </div>-->
+     
+      <div class="contact">
+      <div class="contacttitle">
+        <h3>Kontakt</h3>
+       
+        </div>
+
+        <div class="contactform" float>
+        <form>
+           <input class="input_text" type="email" tabindex="1" placeholder="E-Mail" required><br>
+            <input class="input_text" type="text" tabindex="2" placeholder="Betreff" required><br>
+            <textarea class="input_text" tabindex="3" placeholder="Nachricht" required></textarea><br>
+            <input class="button" type="submit">
+        </form>
+        </div>
+        </div>
+        </div>
+
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      
+         <!-- The Modal -->
+      <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'"
+      class="close" title="Close Modal">&times;</span>
+      
+        <!-- Modal Content -->
+        <form class="modal-content animate" method ="POST" action="php/login.php">
+          <div class="imgcontainer">
+            <img src="img/avatar.png" alt="Avatar" class="avatar">
+          </div>
+      
+          <div class="container">
+            <div class="inputlogin">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+      
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+      
+            <button class="btn login2btn" type="submit">Login</button>
+            <label>
+              <div class="checkbox">
+                <input  type="checkbox" checked="checked" name="remember"> Remember me
+              </div>
+              </label>
+            </div>
+          </div>
+      
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="btn cancelbtn">Cancel</button>
+            <span class="psw">Password vergessen?<a href="#"> Zurücksetzten!</a></span>
+            <spam class="signup">Noch keinen Account?<a href="register.html"> Registriere dich hier!</a></spam>
+          </div>
+        </form>
+        <script>
+          // Get the modal
+          var modal = document.getElementById('id01');
+          
+          // When the user clicks anywhere outside of the modal, close it
+          window.onclick = function(event) {
+            if (event.target == modal) {
+              modal.style.display = "none";
+            }
+          }
+          </script>
+</body>
+</html>

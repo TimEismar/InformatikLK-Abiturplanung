@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Eismart - MQTT SmartHome</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet"> 
+  <!-- Custom styles for this template -->
+  <link href="css/heroic-features.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="icon" href="img/favicon/LogoMakr_8BoySC.png" type="image/png">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a href="index.html"><img class="imglogo" src="img/abi.png"></a>
+      <!--<a class="navbar-brand" href="#"><img class="imglogo" src="img/logo.png"></a>-->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <button class="btn loginbtn" onclick="document.getElementById('id01').style.display='block'">Log-in</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <!-- Jumbotron Header -->
+    <header class="jumbotron my-4" class="test">
+      <h1 class="display-3">Abi-MFTT</h1>
+      <p class="lead">Die Lösung für deine Abiprobleme</p>
+      <ul class="aufzaehlzeichen">
+              <li><i class="ri-check-double-line"></i> XAMPP-Basiert</li>
+              <li><i class="ri-check-double-line"></i> Von Schülern für Schüler</li>
+              <li><i class="ri-check-double-line"></i> Lokales Hosting möglich</li>
+            </ul>
+      <a href="register.html" class="btn btn-primary btn-lg">Jetzt als Schüler Registrieren</a>
+      <a href="lehrerreg.html" class="btn btn-primary btn-lg">Jetzt als Lehrer Registrieren</a>
+        <img class="webimage" src="img/web.png" alt="">
+      
+     
+    </header>
+    <!--<img class="webimage" src="img/web.png" alt="">-->
+    <!-- Page Features -->
+    <div class="row text-center">
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100">
+          <img class="card-img-top" src="img/xampp.jpg" alt="">
+          <div class="card-body">
+            <h4 class="card-title">XAMPP-Basiert</h4>
+            <p class="card-text">Die Website basiert auf XAMPP </p>
+          </div>
+          <div class="card-footer">
+            <a href="https://www.apachefriends.org/de/download.html" class="btn btn-primary">XAMPP-Download</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100">
+          <img class="card-img-top" src="img/server.png" alt="Server-Icon">
+          <div class="card-body">
+            <h4 class="card-title">Zugriff aus aller Welt</h4>
+            <p class="card-text">Wenn Sie sich eine Domain besorgen, können Sie aus der ganzen Welt auf Ihr Abiturprojekt zugreifen
+            </p>
+          </div>
+          <div class="card-footer">
+            <a href="https://www.strato.de/" class="btn btn-primary">Domain bei Strato</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100">
+          <img class="card-img-top" src="img/stift.jpg" alt="In Work">
+          <div class="card-body">
+            <h4 class="card-title">Entwickelt von einem Informatik Leistungskurs</h4>
+            <p class="card-text">Durch die Entwicklung seitens der Schüler, die mit den Lehrern kooperiert haben, ist dieses Tool perfekt auf Schulen ausgelegt</p>
+          </div>
+          <div class="card-footer">
+            <a href="https://www.stiftisches.de/" class="btn btn-primary">Die Website der Schule</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100">
+          <img class="card-img-top" src="img/github.png" alt="GitHub">
+          <div class="card-body">
+            <h4 class="card-title">Code auf GitHub</h4>
+            <p class="card-text">Man kann sich die Website nach seinen Wünschen anpassen.</p>
+          </div>
+          <div class="card-footer">
+            <a href="https://github.com/TimEismar/IF-Projekt" class="btn btn-primary">GitHub Repository</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark foot">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Abi-MFTT 2021</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      
+         <!-- The Modal -->
+      <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'"
+      class="close" title="Close Modal">&times;</span>
+      
+        <!-- Modal Content -->
+        <form class="modal-content animate" method ="POST" action="php/login.php">
+          <div class="imgcontainer">
+            <img src="img/avatar.png" alt="Avatar" class="avatar">
+          </div>
+      
+          <div class="container">
+            <div class="inputlogin">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+      
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+      
+            <button class="btn login2btn" type="submit">Login</button>
+            </div>
+          </div>
+      
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="btn cancelbtn">Cancel</button>
+            <span class="psw">Password vergessen?<a href="#"> Zurücksetzten!</a></span>
+            <spam class="signup">Noch keinen Account?<a href="register.html"> Registriere dich hier!</a></spam>
+          </div>
+        </form>
+        <script>
+          // Get the modal
+          var modal = document.getElementById('id01');
+          
+          // When the user clicks anywhere outside of the modal, close it
+          window.onclick = function(event) {
+            if (event.target == modal) {
+              modal.style.display = "none";
+            }
+          }
+          </script>
+
+</body>
+
+</html>

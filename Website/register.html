@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Eismart - MQTT SmartHome</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet"> 
+  <!-- Custom styles for this template -->
+  <link href="css/heroic-features.css" rel="stylesheet">
+  <link href="css/register.css" rel="stylesheet">
+  <link rel="icon" href="img/favicon/LogoMakr_8BoySC.png" type="image/png">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a href="index.html"><img class="imglogo" src="img/abi.png"></a>
+      <!--<a class="navbar-brand" href="#"><img class="imglogo" src="img/logo.png"></a>-->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <button class="btn loginbtn" onclick="document.getElementById('id01').style.display='block'">Log-in</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--Registrierung-->
+  <div class="register">
+  <div class="registerform" float>
+  <form action="php/register.php" style="border:1px solid #ccc">
+    
+    <div class="registertitle">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      </div>
+      <hr>
+  
+      <label for="firstname"></label>
+      <input class="input_text" type="text" placeholder="Vorname eingeben" name="firstname" required>
+      <br>
+      <label for="lastname"></label>
+      <input class="input_text" type="text" placeholder="Nachname eingeben" name="lastname" required>
+      <br>
+      <label for="email"></label>
+      <input class="input_text" type="email" placeholder="E-Mail Adresse eingeben" name="email" required>
+      <br>
+      <label for="username"></label>
+      <input class="input_text" type="text" placeholder="Nutzername eingeben" name="username" required>
+      <br>
+      <label for="psw"></label>
+      <input class="input_text" type="password" placeholder="Passwort eingeben" name="ipsw" required>
+      <br>
+      <label for="psw-repeat"></label>
+      <input class="input_text" type="password" placeholder="Passwort wiederholen" name="psw-repeat" required>
+  
+      </label>
+  
+      <p>By creating an account you agree to our <a href="https://www.termsfeed.com/live/6cb72c84-ffe3-412a-8af8-a23cb02bdb61" style="color:dodgerblue">Privacy Policy</a>.</p>
+  
+      <div class="clearfix">
+        <a href ="index.html"><button class="button" type="button" class="cancelbtn">Cancel</button></a>
+        <button class="button" type="submit" class="signupbtn" name="Submit" >Sign Up</button>
+      </div>
+    
+  </form>
+</div>
+</div>
+
+<script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      
+         <!-- The Modal -->
+      <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'"
+      class="close" title="Close Modal">&times;</span>
+      
+        <!-- Modal Content -->
+        <form class="modal-content animate" method ="POST" action="php/login.php">
+          <div class="imgcontainer">
+            <img src="img/avatar.png" alt="Avatar" class="avatar">
+          </div>
+      
+          <div class="container">
+            <div class="inputlogin">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+      
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+      
+            <button class="btn login2btn" type="submit">Login</button>
+            <label>
+              <div class="checkbox">
+                <input  type="checkbox" checked="checked" name="remember"> Remember me
+              </div>
+              </label>
+            </div>
+          </div>
+      
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="btn cancelbtn">Cancel</button>
+            <span class="psw">Password vergessen?<a href="#"> Zurücksetzten!</a></span>
+            <spam class="signup">Noch keinen Account?<a href="register.html"> Registriere dich hier!</a></spam>
+          </div>
+        </form>
+        <script>
+          // Get the modal
+          var modal = document.getElementById('id01');
+          
+          // When the user clicks anywhere outside of the modal, close it
+          window.onclick = function(event) {
+            if (event.target == modal) {
+              modal.style.display = "none";
+            }
+          }
+          </script>
+
+  <!--Footer-->
+  <footer class="py-5 bg-dark foot">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Eismart 2020</p>
+    </div>
+  </footer>
+
+</body>
+  </html>
