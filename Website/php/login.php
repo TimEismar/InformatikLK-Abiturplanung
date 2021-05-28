@@ -1,18 +1,19 @@
 <?php 
-$servername = "localhost";
-$user = "root";
-$pw = "eismart";
-$db ="EISMART";
+require_once "config.php";
 
 $iuname = $_GET["iusername"];
 $ipsw = $_GET["ipsw"];
 
-$aadpw = $db->query("SELECT Passwort FROM Users");
-echo $aadpw;
+$dpw = $db->query("SELECT Passwort FROM Users WHERE username = $iuname");
 
 
 if(password_verify($ipsw, $dpw)){
-    echo "<script src="js/login.js"></script>";
+    //echo "<script src="js/login.js"></script>";
+    header('lehrerreg.html');
+    exit;
+}
+else{
+    echo 'das war ein ungültiger Login';
 }
 
 
