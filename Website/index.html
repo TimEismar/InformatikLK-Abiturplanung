@@ -38,6 +38,11 @@
               <span class="sr-only">(current)</span>
             </a>
           </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="shirt.html">T-Shirt Designer
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
           <li class="nav-item">
             <button class="btn loginbtn" onclick="document.getElementById('id01').style.display='block'">Log-in</button>
           </li>
@@ -58,7 +63,7 @@
               <li><i class="ri-check-double-line"></i> Von Schülern für Schüler</li>
               <li><i class="ri-check-double-line"></i> Lokales Hosting möglich</li>
             </ul>
-      <a href="register.html" class="btn btn-primary btn-lg">Jetzt Registrieren</a>
+      <a href="t.html" class="btn btn-primary btn-lg">Jetzt Registrieren</a>
         <img class="webimage" src="img/web.png" alt="">
       
      
@@ -136,40 +141,53 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
         <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-      
+
          <!-- The Modal -->
       <div id="id01" class="modal">
         <span onclick="document.getElementById('id01').style.display='none'"
       class="close" title="Close Modal">&times;</span>
-      
+
         <!-- Modal Content -->
         <form class="modal-content animate" method ="POST" action="php/login.php">
           <div class="imgcontainer">
             <img src="img/avatar.png" alt="Avatar" class="avatar">
           </div>
-      
+
           <div class="container">
             <div class="inputlogin">
-            <label for="uname"><b>Username</b></label>
-            <input type="text" placeholder="Enter Username" name="uname" required>
-      
-            <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required>
-      
+            <label for="username"><b>E-Mail</b></label>
+            <input type="mail" placeholder="Enter E-Mail" name="username" required>
+
+            <label for="passwort"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="passwort" required>
+
             <button class="btn login2btn" type="submit">Login</button>
+            <label>
+             
+              </label>
             </div>
           </div>
-      
+
           <div class="container" style="background-color:#f1f1f1">
             <button type="button" onclick="document.getElementById('id01').style.display='none'" class="btn cancelbtn">Cancel</button>
-            <span class="psw">Password vergessen?<a href="#"> Zurücksetzten!</a></span>
-            <span class="signup">Noch keinen Account?<a href="register.php"> Registriere dich hier!</a></span>
+            <span class="psw">Password vergessen?<a href="#"> ZurÃ¼cksetzten!</a></span>
+            <span class="signup">Noch keinen Account?<a href="reset.html"> Registriere dich hier!</a></span>
           </div>
         </form>
         <script>
           // Get the modal
           var modal = document.getElementById('id01');
-          
+
+          // When the user clicks anywhere outside of the modal, close it
+          window.onclick = function(event) {
+            if (event.target == modal) {
+              modal.style.display = "none";
+            }
+          }
+          </script>
+          // Get the modal
+          var modal = document.getElementById('id01');
+
           // When the user clicks anywhere outside of the modal, close it
           window.onclick = function(event) {
             if (event.target == modal) {
