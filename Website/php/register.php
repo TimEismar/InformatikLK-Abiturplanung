@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html>
-    <body>
+
 
 <?php
     require_once "config.php";
@@ -24,7 +22,7 @@
 
 
 
-    $sql = "INSERT INTO Users (Username, Vorname, Nachname, Mail, Passwort) VALUES ('$iuname', '$ifirstname', '$ilastname', '$imail', '$hashed_password')";
+    $sql = "INSERT INTO users (Username, Vorname, Nachname, Mail, Passwort) VALUES ('$iuname', '$ifirstname', '$ilastname', '$imail', '$hashed_password')";
 
     if($db->query($sql) === TRUE){
         echo "Erfolgreich registriert";
@@ -39,5 +37,3 @@
 
 ?>
 
-</body>
-</html>
